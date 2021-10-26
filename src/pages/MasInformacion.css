@@ -115,6 +115,9 @@
 .formularioMasInformacion button{
     height: 5%;
     width: 30%;
+    background-color: #6bade2;
+    border:0.15rem solid #7697af;
+    color: white;
     margin: 2% auto;
     border-radius: 0.5rem;
 }

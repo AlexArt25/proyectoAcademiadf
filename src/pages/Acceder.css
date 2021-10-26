@@ -53,8 +53,11 @@
 }
 
 .mainAcceder button{
-    height: 20%;
+    height: 22%;
     width: 80%;
+    background-color: #6bade2;
+    border:0.15rem solid #7697af;
+    color: white;
     margin: 5% auto 2% auto;
     border-radius: 0.5rem;
 }

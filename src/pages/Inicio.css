@@ -28,11 +28,12 @@
 .imagenCurso{
     height: 100%;
     width: 30%;
+    margin: auto 0;
 }
 .imagenCurso img{
     height: 100%;
-    width: 60%;
-    margin: 0% 20%;
+    width: 90%;
+    margin: 0% auto;
     margin-top: 6%;
     border-radius: 1rem;
 }
