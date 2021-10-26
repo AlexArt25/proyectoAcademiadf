@@ -181,6 +181,16 @@
     .me-auto{
         margin: 0% auto;
     }
+    .dropdown-menu.show{
+        background-color: white;
+        border: 0.001rem solid black;
+        color: #6bade2;
+    }
+
+    .dropdown-menu.show a{
+        color: #6bade2 !important;
+    }
+
   }
 
   @media only screen and (min-width:992px){
@@ -220,5 +230,18 @@
         width: auto;
         margin: 0% auto;
     }
+
+    .dropdown-menu.show{
+        background-color: white;
+        border: 0.0001rem solid black;
+        
+       
+    }
+
+    .dropdown-menu.show a{
+        color: #6bade2 !important;
+    }
+
+
   }
 
