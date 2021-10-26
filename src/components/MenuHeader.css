@@ -8,27 +8,32 @@
     height: 100%;
     width: 90%;
     margin: 0 auto;
+    padding: 0 !important;
 }
 
 .navbar{
     height: 100%;
-    width: 80%;
+    width: 100% !important;
+    padding: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 } 
 
-
- .divLogo{
+#basic-navbar-nav{
     height: 100%;
-    width: 6%;
-    margin: 1% 5%;
-    padding: 0% 0% !important;
-    border-radius: 10%;
+    width: 100%;
+}
+
+.divLogo{
+    height: 100% !important;
+    width: 10%;
+    margin: 0.1% 5%;
+    padding: 0.5% 1% !important;
 }
 
 .divLogo img{
-    height: 100%;
+    height: 100% !important;
     width: 90%;
 }
 
@@ -59,17 +64,16 @@
     bottom: 10%;
     height:5rem !important;
     width: 10% !important;
-    color: red !important;
     backdrop-filter: blur(2);
-    background-color: white;
-    /* background:linear-gradient(180deg, #126cf142, rgba(255, 255, 255, 1)); */
+    background-color: transparent;
+    border: none;
 }
 
 #basic-nav-dropdown{
     bottom: 10px;
 }
 .dropdown-menu a{
-    color: #6bade2 !important;
+    color: white !important;
 }
 
   /* Media Queries para las diferentes pantallas de los dispositivos */
@@ -143,7 +147,7 @@
 
   @media only screen and (min-width:762px) and (max-width:992px){
     .divHeader{
-        height: auto;
+        height: 12vh;
         width: 100%;
     }
 
@@ -151,13 +155,18 @@
         height: 60% !important;
         width: 10%;
     }
+
+    #basic-navbar-nav{
+        height: 50%;
+        width: 100%;
+    }
   
     .navbar{
         height: 100%;
         width: 100% !important;
         max-width: 100% !important;
-        margin: 0% 0%;
-        justify-content: flex-start;
+        /* margin: 0% 0%; */
+        /* justify-content: flex-start; */
     }
 
     .navbar-toggler.collapsed, .navbar-toggler{
@@ -174,23 +183,28 @@
     }
   }
 
-  /* @media only screen and (min-width:992px){
+  @media only screen and (min-width:992px){
+      
     .divHeader{
-        height: auto;
+        height: 12vh;
         width: 100%;
     }
 
     .divLogo{
-        height: 60% !important;
-        width: 5%;
+        height: 80% !important;
+        width: 9%;
+    }
+
+    #basic-navbar-nav{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
   
     .navbar{
-        height: 100%;
+        height: 100% ;
         width: 100% !important;
-        max-width: 100% !important;
-        margin: 0% 0%;
-        justify-content: flex-start;
     }
 
     .navbar-toggler.collapsed, .navbar-toggler{
@@ -203,7 +217,8 @@
     }
 
     .me-auto{
+        width: auto;
         margin: 0% auto;
     }
-  } */
+  }
 

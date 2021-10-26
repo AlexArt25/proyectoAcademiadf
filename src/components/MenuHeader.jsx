@@ -24,7 +24,7 @@ const MenuHeader = () => {
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
-            </Navbar>
+          </Navbar>
         </div>
     )
 }
