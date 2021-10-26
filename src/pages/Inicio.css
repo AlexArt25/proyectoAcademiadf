@@ -1,0 +1,147 @@
+.divInicio{
+    height: 100%;
+    width: 100%;
+    background: rgb(124,184,231);
+    background: linear-gradient(90deg, rgba(124,184,231,1) 0%, rgba(30,88,155,0.98) 100%);
+}
+.main{
+    height: 75%;
+    width: 100%;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding:1%;
+   overflow: hidden;
+   overflow-y: scroll;
+}
+.tarjetaCurso{
+    height:auto;
+    width: 98%;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    border-radius: 1rem;
+    border: 2px solid #4987C3;
+    box-shadow: 0.25rem 0.23rem 0.7rem rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.imagenCurso{
+    height: 100%;
+    width: 30%;
+}
+.imagenCurso img{
+    height: 100%;
+    width: 60%;
+    margin: 0% 20%;
+    margin-top: 6%;
+    border-radius: 1rem;
+}
+
+.cuerpoTarjetaCurso{
+    height: fit-content;
+    width: 70%;
+}
+.cuerpoTarjetaCurso h2,h4{
+    text-align: center;
+    margin: 0.5rem 0rem;
+}
+.cuerpoTarjetaCurso h2{
+    color: #6bade2;
+}
+.cuerpoTarjetaCurso h4{
+    color: #8a8484;
+}
+
+.descripcionCurso{
+    height: 40%;
+    width: 90%;
+    padding: 1% 2%;
+    text-align: justify;
+    margin-bottom: 1%;
+}
+.datosCurso{
+    height: 14%;
+    width: 95%;
+    padding: 0.5% 0%;
+    background-color: #F4F4F5;
+    border-radius: 1rem;
+    box-shadow: inset -0.1rem 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
+    margin-top: 1%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.reactIcons{
+    margin-top: 0.1rem;
+    margin-right: 0.3rem;
+    color: #696565;
+}
+.botonMasInfo{
+    height: 40%;
+    width: 95%;
+    margin-bottom: 2%;
+}
+.botonMasInfo button{
+    height: 10%;
+    width: 20%;
+    margin: 0% 40%;
+    padding: 1% 1%;
+    background-color: #6bade2;
+    border:0.15rem solid #7697af;
+    color:white;
+    font-weight: bold;
+    letter-spacing: 0.04rem;
+    border-radius: 0.2rem;
+}
+
+/* Media Queries segun la pantalla del dispositivo */
+@media only screen and (max-width:576px){
+    .nombreCurso{
+        font-size: 1.4rem;
+        text-align: justify;
+    }
+   .subtituloCurso{
+       font-size: 0.8rem;
+   }
+   .datosCurso{
+       margin: 0 auto;
+   }
+   .botonMasInfo button{
+       width: 40%;
+       margin: 3% auto;
+   }
+}
+@media only screen and (min-width:576px) and (max-width:768px){
+    .nombreCurso{
+        font-size: 1.6rem;
+        text-align: justify;
+    }
+   .subtituloCurso{
+       font-size: 1rem;
+   }
+   .datosCurso{
+    margin: 0 auto;
+    }
+    .botonMasInfo button{
+        width: 40%;
+        margin: 3% auto;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:992px){
+    .nombreCurso{
+        font-size: 1.8rem;
+        text-align: justify;
+    }
+   .subtituloCurso{
+       font-size: 1.2rem;
+   }
+   .datosCurso{
+    margin: 0 auto;
+    }
+    .botonMasInfo button{
+        width: 40%;
+        margin: 3% auto;
+    }
+}

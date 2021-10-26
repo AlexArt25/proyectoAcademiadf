@@ -1,0 +1,158 @@
+.divInformacionCurso{
+    height: 100%;
+    width: 100%;
+    background: rgb(124,184,231);
+    background: linear-gradient(90deg, rgba(124,184,231,1) 0%, rgba(30,88,155,0.98) 100%);
+    /* backdrop-filter: blur(20px); */
+}
+
+.main{
+    height: 75vh;
+    width: 100%;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding:1%;
+   overflow: hidden;
+   overflow-y: scroll;
+}
+
+.tablaInformacionCurso{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tablaInformacionCurso h1{
+    text-align: center;
+    color: #6bade2;
+}
+
+.tablaInfo{
+    height: auto;
+    width: 95%;
+    margin: 0 auto;
+    background-color: rgba(31, 89, 156, 0.1);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.headerTabla{
+    height: 100%;
+    width: 30%;
+    background-color: #9DDEE7;
+    font-size: 2.1rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 3% 0%;
+    padding-bottom: 1%;
+    color: #417FB8;
+    border-bottom: 0.02rem black solid;
+}
+/* No funciona el first-child, hay que mirar porque para añadir un border-radius a la tabla */
+
+.cuerpoTabla{
+    height: 100%;
+    width: 70%;
+    border-bottom: 0.02rem solid rgb(196, 195, 195);
+}
+
+.cuerpoTabla p{
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 3% 0%;
+    padding-bottom: 1%;
+    color: #417FB8;
+}
+
+.descripcionCurso{
+    padding: 0% 5%;
+}
+
+.botonesInfo{
+    height: 30%;
+    width: 100%;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+}
+
+.separacionHeader{
+    height: 100%;
+    width: 30%;
+}
+
+.botones{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.botonesInfo button{
+    height: 10%;
+    width: 20%;
+    padding: 1% 1%;
+    background-color: #6bade2;
+    border:0.15rem solid #7697af;
+    color:white;
+    font-weight: bold;
+    letter-spacing: 0.04rem;
+    border-radius: 0.2rem;
+}
+
+/* Media Queries para las distintas pantallas de los dispositivos */
+
+@media only screen and (max-width:576px){
+    .tablaInfo th,td{
+        padding: 1% 1%;
+    }
+    .tablaInfo th{
+        font-size: 1.4rem;
+        padding-right: 1%;
+    }
+    .botones button{
+        width: 80%;
+        margin: 2% auto;
+        height: 10%;
+    }
+}
+@media only screen and (min-width:576px) and (max-width:768px){
+    .tablaInfo th,td{
+        padding: 1% 1%;
+    }
+    .tablaInfo th{
+        font-size: 1.6rem;
+        padding-right: 1%;
+    }
+    .botones button{
+        width: 80%;
+        margin: 2% auto;
+        height: 10%;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:992px){
+    .tablaInfo th,td{
+        padding: 1% 1%;
+    }
+    .tablaInfo th{
+        padding-right: 1%;
+    }
+    .botones button{
+        width: 30%;
+        margin: 2% 0%;
+        height: 10%;
+    }
+}
+@media only screen and (min-width:992px){
+    .botones button{
+        width: 40%;
+        margin: 2% 0%;
+        height: 10%;
+    }
+}

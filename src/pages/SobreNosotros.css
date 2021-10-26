@@ -1,0 +1,96 @@
+.divSobreNosotros{
+    height: 100%;
+    width: 100%;
+    background: rgb(124,184,231);
+    background: linear-gradient(90deg, rgba(124,184,231,1) 0%, rgba(30,88,155,0.98) 100%);
+}
+
+.main{
+    height: 75vh;
+    width: 100%;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding:1%;
+   overflow: hidden;
+   overflow-y: scroll;
+}
+
+h1,h2{
+    text-align: center;
+    color: #6bade2;
+}
+
+h1{
+    letter-spacing: 0.5rem;
+}
+h2{
+    letter-spacing: 0.2rem;
+}
+
+.sobreNosotrosImg{
+    height: 70%;
+    width: 80%;
+    margin: 2% auto;
+    border-radius: 0.5rem;
+    background-image: url("../img/sample1.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+/* .sobreNosotrosImg img{
+    height: 100%;
+    width: 100%;
+} */
+.sobreNosotros{
+    height: auto;
+    width: 100%;
+}
+
+.sobreNosotros p{
+    justify-content: center;
+    text-align: justify;
+    padding: 0.2% 10%;
+    line-height: 2rem;
+}
+
+.sobreNosotros p:first-child{
+    text-indent: 4.5rem;
+}
+.sobreNosotros p:nth-child(6n){
+    text-indent: 4.5rem;
+}
+.sobreNosotros span{
+    font-weight: bolder;
+    font-style: italic;
+}
+.sobreNosotros a{
+    color: blue;
+    margin: 0;
+}
+.sobreNosotros a:visited{
+    color: #6bade2;
+}
+
+/* Media Queries para las diferentes pantallas de los dispositivos */
+@media only screen and (max-width:576px){
+    .sobreNosotrosImg{
+        height: 30%;
+    }
+}
+
+@media only screen and (min-width:576px) and (max-width:762px){
+    .sobreNosotrosImg{
+        height: 40%;
+        width: 100%;
+        background-size: cover;
+    }
+}
+
+@media only screen and (min-width:762px) and (max-width:992px){
+    .sobreNosotrosImg{
+        height: 40%;
+        width: 100%;
+        background-size: contain;
+    }
+}
+

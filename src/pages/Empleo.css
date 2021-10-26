@@ -1,0 +1,328 @@
+.divEmpleo{
+    height: 100%;
+    width: 100%;
+    background: rgb(124,184,231);
+    background: linear-gradient(90deg, rgba(124,184,231,1) 0%, rgba(30,88,155,0.98) 100%);
+}
+
+.main{
+    height: 75vh;
+    width: 100%;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding:1%;
+   overflow: hidden;
+   overflow-y: scroll;
+   text-align: center;
+}
+h1,h3,h4{
+    text-align: center;
+    color: #6bade2;
+}
+
+.carousel{
+   height: fit-content;
+   width: 100%;
+   margin: 2% auto;
+   border-radius: 1rem;
+}
+.carouselItem{
+    border-radius: 1rem;
+}
+.carousel img{
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.tarjetasEmpleo{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tarjetaEmpleo, .tarjetaEmpresa{
+    height:fit-content;
+    /* width: 60%; */
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 2px solid #4987C3;
+    box-shadow: 0.25rem 0.23rem 0.7rem rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.button{
+    height: 10%;
+    width: 40%;
+    margin: 2% auto !important;
+    padding: 1% 1%;
+    background-color: #6bade2;
+    border:0.15rem solid #7697af;
+    color:white;
+    font-weight: bold;
+    letter-spacing: 0.04rem;
+    border-radius: 0.5rem;
+}
+.button a{
+    color: white;
+    text-decoration: none;
+}
+.button a:hover{
+    color: white;
+}
+
+.tarjetasContacto{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tarjetaCentros , .tarjetaFormulario{
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 2px solid #4987C3;
+    box-shadow: 0.25rem 0.23rem 0.7rem rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjetaFormulario form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.tarjetaFormulario label{
+    height: 5%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1% 0%;
+    font-weight: bolder;
+    font-style: italic;
+}
+.tarjetaFormulario input{
+    height: 5%;
+    width: 50%;
+    margin: 1% 0%;
+    background-color: #F4F4F5;
+    border: 0.03rem solid #4987C3;
+    border-radius: 0.4rem;
+    box-shadow: inset -0.1rem 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+.tarjetaFormulario textarea{
+    height: 20%;
+    width: 50%;
+    background-color: #F4F4F5;
+    border: 0.03rem solid #4987C3;
+    border-radius: 1rem;
+    box-shadow: inset -0.1rem 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.form-check{
+    height: 10%;
+    width: 100%;
+    display: flex !important;
+    flex-direction: row;
+}
+.form-check input[type=checkbox]{
+    height: 40%;
+    width: 35%;
+    box-shadow: none;
+}
+.form-check p{
+    text-align: center;
+    padding: auto;
+}
+
+.tarjetaFormulario button{
+    height: 10%;
+    width: 20%;
+    margin: 2% auto;
+    padding: 1% 1%;
+    background-color: #6bade2;
+    border:0.15rem solid #7697af;
+    color:white;
+    font-weight: bold;
+    letter-spacing: 0.04rem;
+    border-radius: 0.5rem;
+}
+
+/* Media Queries para las diferentes pantallas de los dispositivos */
+@media only screen and (max-width:576px){
+
+    .tarjetasCentros .tarjetaFormulario{
+        height: fit-content;
+        padding: none;
+    }
+    .tarjetaFormulario form{
+        height: 80% !important;
+    }
+
+    .tarjetaFormulario label, .tarjetaFormulario input{
+        height: 10%;
+        margin: 3% 0%;
+    }
+    .tarjetaFormulario textarea{
+        margin: 3% 0%;
+    }
+
+    .tarjetaFormulario form button{
+        height: 15%;
+        width: 100%;
+        border-radius: 0.5rem;
+        margin: 15% auto !important ;
+    }
+
+    .tarjetasContacto h4,.tarjetasContacto h5,.tarjetasContacto p{
+        margin: 0rem;
+    }
+
+    .form-check{
+        height: 5% !important;
+        display: flex;
+        flex-direction: row;
+        margin: 0% 0%;
+        padding: 0% 0%;
+        font-size: 0.8rem;
+        vertical-align: middle;
+    }
+    .form-check p, span{
+        padding: 9% 0%;
+        padding-top: 3%;
+        
+    }
+
+    .form-check input[type=checkbox]{
+        height: 100%;
+        width: 20%;
+    }
+}
+
+@media only screen and (min-width:576px) and (max-width:762px){
+
+    .tarjetasEmpleo p{
+        text-align: center !important;
+    }
+    
+    .tarjetaFormulario form{
+        height: 80%;
+    }
+
+    .tarjetaFormulario label, .tarjetaFormulario input{
+        height: 10%;
+        margin: 3% 0%;
+    }
+    .tarjetaFormulario textarea{
+        margin: 3% 0%;
+    }
+
+    .tarjetaFormulario button{
+        height: 15%;
+        width: 100%;
+        border-radius: 0.5rem;
+        margin: 10% auto !important;
+    }
+
+    .tarjetasContacto h4,.tarjetasContacto h5,.tarjetasContacto p{
+        margin: 0rem;
+    }
+
+    .form-check{
+        height: 5% !important;
+        display: flex;
+        flex-direction: row;
+        margin: 0% 0%;
+        padding: 0% 0%;
+        font-size: 0.8rem;
+        vertical-align: middle;
+    }
+    .form-check p, span{
+        padding: 9% 0%;
+        padding-top: 3%;
+        
+    }
+    .form-check input[type=checkbox]{
+        height: 100%;
+        width: 20%;
+    }
+}
+
+@media only screen and (min-width:762px) and (max-width:992px){
+
+    .tarjetasEmpleo p{
+        text-align: center !important;
+    }
+
+    .button{
+        height: 15%;
+        width: 100%;
+    }
+    
+    .tarjetaFormulario form{
+        height: 80%;
+    }
+
+    .tarjetaFormulario label, .tarjetaFormulario input{
+        height: 7%;
+        margin: 2% 0%;
+    }
+    .tarjetaFormulario textarea{
+        margin: 3% 0%;
+    }
+
+    .tarjetaFormulario button{
+        height: 12%;
+        width: 80%;
+        margin: 2% auto !important;
+    }
+
+    .tarjetasContacto h4,.tarjetasContacto h5,.tarjetasContacto p{
+        margin: 0rem;
+    }
+
+    .form-check{
+        height: 7%;
+        display: flex;
+        flex-direction: row;
+        margin: 0% 0%;
+        padding: 0% 0%;
+        font-size: 0.8rem;
+        vertical-align: middle;
+    }
+    .form-check p, span{
+        padding: 0% 0%;
+    }
+    
+    .form-check input[type=checkbox]{
+        height: 100%;
+        width: 20%;
+        /* display: flex;
+        align-items: center !important;
+        justify-content: center !important; */
+        transform: scale(0.7);
+    }
+}
